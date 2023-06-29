@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --black: #000000;
     --blue1: #1B02A4;
@@ -15,74 +27,80 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px;
+    color: var(--bone);
 }
 
-nav {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    background-color: var(--blue);
-    border-bottom: 1px solid var(--orange);
-
+body {
+    background-color: var(--black);
+    text-align:center !important;
+    font-family: 'Inter';
 }
-.nav-wrapper {
+
+p {
+    color: var(--gray);
+}
+
+nav{
     width: 100%;
-    height: 100%;
+    color: var(--gray);
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
 }
 
 nav ul {
+    justify-content: center;
+    width: 100%;
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/*W3C CSS*/
-.hoverable{
-    display:inline-block;
-    backface-visibility: hidden;
-    vertical-align: middle;
-    position:relative;
-    box-shadow: 0 0 1px rgba(0,0,0,0);
+nav li{
+    padding: 15px 50px;
     transform: translateZ(0);
     transition-duration: .3s;
     transition-property:transform;
 }
 
-.hoverable:before{
+nav a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:before{
     position:absolute;
     pointer-events: none;
     z-index:-1;
     content: '';
     top: 100%;
     left: 5%;
-    height:10px;
-    width:90%;
-    opacity:0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, var(--blue1) 0%, var(--black) 80%);
+    background: radial-gradient(ellipse at center, var(--blue1) 0%, var(--black) 80%);
     /* W3C */
     transition-duration: 0.3s;
     transition-property: transform, opacity;
 }
 
-.hoverable:hover, .hoverable:active, .hoverable:focus{
+nav li:hover, nav li:active, nav li:focus{
     transform: translateY(-5px);
 }
-.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+nav li:hover:before, nav li:active:before, nav li:focus:before{
     opacity: 1;
     transform: translateY(-5px);
 }
+
+.pbs {padding-bottom: 10px;}
+.pbm {padding-bottom: 20px;}
+.pbl {padding-bottom: 50px;}
