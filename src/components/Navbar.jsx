@@ -1,23 +1,25 @@
 import React from "react";
 import '../styles/Style.css';
 
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="nav-wrapper">
-        <ul>
-            <li>
-                <Link to="/" class="hoverable">Home</Link>
-            </li>
-            <li>
-                <Link to="/about" class="hoverable">About</Link>
-            </li>
-            <li>
-                <Link to="/contact" class="hoverable">Contact</Link>
-            </li>
-        </ul>
-    </div>
+    <nav class="pbl">
+        <div class="nav-wrapper ">
+            <ul class="">
+                <li>
+                    <Link to="/">HOME</Link>
+                </li>
+                <li>
+                    <Link to="/about">ABOUT</Link>
+                </li>
+                <li>
+                    <Link to="/contact">CONTACT</Link>
+                </li>
+            </ul>
+        </div>
+    </nav>
   );
 }
 

@@ -1,13 +1,14 @@
-import ParticleAnimation from "../components/ParticleAnimation";
-
+import React from "react";
 
 function Home() {
   return (
     <>
-        <body>
-            <h1>HI!</h1>
-        </body>
-        
+      <h1>Jack Shakespeare</h1>
+      <p>
+        Broad experience in all aspects of software development. 
+        Please checkout my projects
+      </p>
+
     </>
   );
 }
