@@ -4,8 +4,8 @@ import Projects from "../components/Projects";
 function Home() {
   return (
     <>
-      <h1>Jack Shakespeare</h1>
-      <p>
+      <h1 className="jack-title">Jack Shakespeare</h1>
+      <p className="ptm">
         Broad experience in all aspects of software development. 
         Please checkout my projects
       </p>

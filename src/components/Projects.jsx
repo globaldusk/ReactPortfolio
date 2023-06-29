@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Style.css';
+import '../styles/Project.css';
 import { projects } from '../constants/constants';
 
 function Projects() {
@@ -10,12 +10,14 @@ function Projects() {
       <div className='grid-container'>
         {projects.map((project, index) => {
           return (
-            <div className='card' key={index}>
+            <a className='card hoverable' key={index} href={project.visit} target="_blank">
 
-              <img src={project.image} alt={project.title}/>
-              <h3 className='project-title' title>{project.title}</h3>
-
-            </div>
+              <img className='thumbnail' src={project.image} alt={project.title}/>
+              <h3 className='project-title pbs' title>{project.title}</h3>
+              <div>
+                <a className='external-link pbs' target="_blank">Source</a>
+              </div>
+            </a>
           );
         })}
 

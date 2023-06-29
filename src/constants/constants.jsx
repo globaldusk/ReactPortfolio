@@ -8,7 +8,7 @@ import liveSoonImage from '../images/live-soon.png';
 
 export const projects = [
     {
-      title: 'E-Commerce Site for Matt Dylan Coaching (Live Soon)',
+      title: 'E-Commerce Site for Matt Dylan Coaching',
       description: "Using React, Node.js, Sanity and Stripe, I have developed from scratch a fully function e-commercce website for Matt Dylan coaching. The content manager has access so their own Sanity CMS service, Stripe payment desk and blog integration",
         image: mattdylanImage,
         tags: ['React', 'Sanity', 'Stripe', 'Node', 'JavaScript'],
