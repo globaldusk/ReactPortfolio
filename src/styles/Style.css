@@ -116,3 +116,7 @@ nav li:hover:before, nav li:active:before, nav li:focus:before{
     padding: 2rem;
 }
 
+.card {
+    color: var(--gray);
+}
+

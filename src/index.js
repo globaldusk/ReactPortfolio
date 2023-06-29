@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import Visualiser from "./components/Visualiser";
 import './styles/Style.css';
 
 
@@ -19,6 +20,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          {/*<Route path="av" element={<Visualiser />} />*/}
 
           {/* 404 */}
           <Route path="*" element={<NoPage />} />
