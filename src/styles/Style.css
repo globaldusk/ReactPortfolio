@@ -104,3 +104,15 @@ nav li:hover:before, nav li:active:before, nav li:focus:before{
 .pbs {padding-bottom: 10px;}
 .pbm {padding-bottom: 20px;}
 .pbl {padding-bottom: 50px;}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+

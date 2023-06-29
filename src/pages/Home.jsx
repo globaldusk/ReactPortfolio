@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "../components/Projects";
 
 function Home() {
   return (
@@ -8,7 +9,7 @@ function Home() {
         Broad experience in all aspects of software development. 
         Please checkout my projects
       </p>
-
+      <Projects/>
     </>
   );
 }
