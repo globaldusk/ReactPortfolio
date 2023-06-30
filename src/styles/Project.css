@@ -19,6 +19,7 @@
     padding-bottom: 0;
     border-radius: 10px;
     box-shadow: 1px 1px 10px var(--blue1);
+    
 }
 
 .card:hover {
@@ -43,4 +44,7 @@
 }
 .external-link:hover {
     background-color: var(--blue3);
+}
+.external-link:active {
+    background-color: var(--blue1);
 }

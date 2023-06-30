@@ -7,7 +7,7 @@ function Home() {
       <h1 className="jack-title">Jack Shakespeare</h1>
       <p className="ptm">
         Broad experience in all aspects of software development. 
-        Please checkout my projects
+        Checkout my projects!
       </p>
       <Projects/>
     </>

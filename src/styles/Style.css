@@ -112,6 +112,9 @@ nav a {
 .ptm {padding-top: 25px;}
 .ptl {padding-top: 50px;}
 
+.text-gray{color: var(--gray);}
+.text-bone{color: var(--bone);}
+
 .grid-container {
     display: grid;
     place-items: center;
