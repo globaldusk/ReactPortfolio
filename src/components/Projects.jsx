@@ -22,10 +22,11 @@ function Projects() {
       <div className='grid-container'>
         {projects.map((project, index) => {
           return (
-            <a className='card hoverable' key={index} href={project.visit} target="_blank">
-
+            <a className='card hoverable icon' key={index} href={project.visit} target="_blank">
+              
+              <h3 className='project-title pbs' title>{project.title}</h3>
               <img className='thumbnail' src={project.image} alt={project.title}/>
-              <h3 className='project-title' title>{project.title}</h3>
+              
               {ShowSource(project)}
             </a>
           );

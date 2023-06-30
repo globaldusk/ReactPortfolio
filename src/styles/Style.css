@@ -114,6 +114,7 @@ nav a {
 
 .text-gray{color: var(--gray);}
 .text-bone{color: var(--bone);}
+.text-black{color: var(--black);}
 
 .grid-container {
     display: grid;
@@ -131,3 +132,25 @@ nav a {
     border-bottom: 3px solid var(--blue3);
 }
 
+.icon{
+    transition: 0.3s ease;
+    color: var(--bone);
+    padding: 10px;
+    transform: perspective(3000px) rotateY(5deg);
+    transition: transform 1s ease 0s;
+}
+
+.icon:hover{
+    transform: perspective(1500px) rotateY(15deg);
+}
+
+footer {
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: right;
+}
