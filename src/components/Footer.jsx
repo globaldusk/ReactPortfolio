@@ -1,13 +1,14 @@
 import React from "react";
-import '../styles/Style.css';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Footer() {
   return (
     <footer>
-        <div className="footer-wrapper text-white">
-          <div className="main-logo"></div>
-          <div className="row align-end full-height">
+        <div className="text-gray">
+          <div className="footer-container">
             <p>All rights reserved ©</p>
+            <a href="https://github.com/globaldusk" target="_blank"><AiFillGithub className="icon" size="2rem"/></a>
+            <a href="https://www.linkedin.com/in/jack-shakespeare/" className="icon" target="_blank"><AiFillLinkedin size="2rem"/></a>
           </div>
         </div>
     </footer>
