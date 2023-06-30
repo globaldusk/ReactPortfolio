@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
         <h1>HI Contact!</h1>
-        <ContactForm/>
+
     </>
   );
 }

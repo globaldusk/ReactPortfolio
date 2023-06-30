@@ -136,12 +136,6 @@ nav a {
     transition: 0.3s ease;
     color: var(--bone);
     padding: 10px;
-    transform: perspective(3000px) rotateY(5deg);
-    transition: transform 1s ease 0s;
-}
-
-.icon:hover{
-    transform: perspective(1500px) rotateY(15deg);
 }
 
 footer {
