@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="ptm">
         <div className="text-gray">
           <div className="footer-container">
             <p>All rights reserved ©</p>

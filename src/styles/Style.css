@@ -30,6 +30,9 @@ h1 {
     font-size: 36px;
     color: var(--bone);
 }
+h2 {
+    font-size: 25px;
+}
 
 body {
     background-color: var(--black);
@@ -59,8 +62,12 @@ nav ul {
     gap: 20px;
 }
 
-.hoverable{
+nav li {
     padding: 15px 50px;
+}
+
+.hoverable{
+    
     transform: translateZ(0);
     transition-duration: .3s;
     transition-property:transform;
@@ -116,21 +123,22 @@ nav a {
 .text-bone{color: var(--bone);}
 .text-black{color: var(--black);}
 
-.grid-container {
-    display: grid;
-    place-items: center;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 3rem;
-    column-gap: 2rem;
-    row-gap: 3rem;
-}
-
 .jack-title{
     display: inline;
     border-bottom: 3px solid var(--blue3);
 }
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+
 
 .icon{
     transition: 0.3s ease;
@@ -147,4 +155,45 @@ footer {
     align-items: center;
     text-align: center;
     float: right;
+}
+
+@media (min-width: 600px) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 800px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 400px) {
+    .card {
+        color: var(--gray);
+        height: 350px;
+        width: 350px;
+        overflow: hidden;
+        text-align: center;
+        display: blo;
+        flex-direction: column;
+        padding-bottom: 0;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px var(--blue1);
+    }
+    .grid-container {
+        display: block;
+        place-items: center;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        column-gap: 1rem;
+        row-gap: 3rem;
+    }
+    
+    nav li {
+        padding: 15px 20px;
+    }
 }
