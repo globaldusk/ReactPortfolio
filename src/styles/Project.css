@@ -8,8 +8,8 @@
 }
 
 .card {
-    color: var(--gray);
-    height: 350px;
+    color: var(--bone);
+    height: fit-content;
     width: 400px;
     overflow: hidden;
     text-align: center;
@@ -25,12 +25,37 @@
     box-shadow: 1px 1px 20px var(--blue2);
 }
 
-
 .thumbnail {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
     overflow: hidden;
+}
+
+.card-info{
+    width: 100%;
+    padding: 0 25px;
+    color: var(--bone);
+    line-height: 24px;
+
+    font-size: 1rem;
+}
+
+.tag-list{
+    display: flex;
+    justify-content: space-around;
+    color: var(--bone);
+    border: 1px solid var(--blue1);
+    background-color: var(--black);
+    border-radius: 16px;
+}
+
+.tag-list:hover{
+    border: 1px solid var(--blue2);
+}
+
+.tag {
+    font-size: 1rem;
 }
 
 .external-link {

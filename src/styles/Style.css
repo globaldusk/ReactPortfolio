@@ -120,6 +120,14 @@ nav a {
 .ptm {padding-top: 25px;}
 .ptl {padding-top: 50px;}
 
+.mbs {margin-bottom: 10px;}
+.mbm {margin-bottom: 25px;}
+.mbl {margin-bottom: 50px;}
+
+.mts {margin-top: 10px;}
+.mtm {margin-top: 25px;}
+.mtl {margin-top: 50px;}
+
 .text-gray{color: var(--gray);}
 .text-bone{color: var(--bone);}
 .text-black{color: var(--black);}

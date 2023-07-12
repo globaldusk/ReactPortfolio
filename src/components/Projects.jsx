@@ -26,7 +26,12 @@ function Projects() {
               
               <h3 className='project-title pbs' title>{project.title}</h3>
               <img className='thumbnail pbs' src={project.image} alt={project.title}/>
-              
+              <p className='card-info pbm'>{project.description}</p>
+              <div className='tag-list mbm'>
+                {project.tags.map((t, i) => {
+                  return <div className="tag" key={i}>{t}</div>;
+                })}
+              </div>
               {ShowSource(project)}
             </a>
           );

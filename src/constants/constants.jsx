@@ -9,7 +9,7 @@ import liveSoonImage from '../images/live-soon.png';
 export const projects = [
     {
       title: 'E-Commerce Site for Matt Dylan Coaching',
-      description: "Using React, Node.js, Sanity and Stripe, I have developed from scratch a fully function e-commercce website for Matt Dylan coaching. The content manager has access so their own Sanity CMS service, Stripe payment desk and blog integration",
+      description: "Using React, Node.js, Sanity and Stripe, I have developed from scratch a fully function e-commercce website for Matt Dylan coaching. The content manager has access to their own Sanity CMS service, Stripe payment desk and blog integration",
         image: mattdylanImage,
         tags: ['React', 'Sanity', 'Stripe', 'Node', 'JavaScript'],
       source: null,
@@ -47,7 +47,7 @@ export const projects = [
       title: 'Web-integrated Chat-bot',
       description: "Django server used to host an html file that displays my amazon lex chatbot in tow methods",
       image: chatbotImage,
-      tags: ['Python', 'Django', 'AWS', 'HTML', 'API', 'Kommunicate'],
+      tags: ['Python', 'Django', 'AWS', 'HTML', 'API'],
       source: 'https://github.com/globaldusk/practicing_django',
       visit: 'https://github.com/globaldusk/practicing_django',
       id: 1,
