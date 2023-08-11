@@ -11,10 +11,10 @@ function ContactForm() {
     return (
         <div className="contact">
             <Airform email="jackshakespeare1@gmail.com">
-                <input type="text" name="firstName" placeholder="First Name"/>
-                <input type="text" name="lastName" placeholder="Last Name"/>
-                <input type="email" name="email" placeholder="Email"/>
-                <textarea name="message" placeholder='Message'/>
+                <input required={true} type="text" name="firstName" placeholder="First Name"/>
+                <input required={true} type="text" name="lastName" placeholder="Last Name"/>
+                <input required={true} type="email" name="email" placeholder="Email"/>
+                <textarea required={true} name="message" placeholder='Message'/>
                 <button>Send</button>
             </Airform>
         </div>
