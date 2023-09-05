@@ -112,6 +112,10 @@ nav a {
     transform: translateY(-5px);
 }
 
+.ps {padding: 10px;}
+.pm {padding: 25px;}
+.pl {padding: 50px;}
+
 .pbs {padding-bottom: 10px;}
 .pbm {padding-bottom: 25px;}
 .pbl {padding-bottom: 50px;}
@@ -137,12 +141,15 @@ nav a {
     border-bottom: 3px solid var(--blue3);
 }
 
+.bio {
+    padding: 10px;
+}
+
 .grid-container {
     display: grid;
     place-items: center;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     column-gap: 2rem;
     row-gap: 3rem;
 }
@@ -178,30 +185,45 @@ footer {
         line-height: 1.5rem;
     }
 }
-
-@media (max-width: 200px) {
+@media (min-width: 500px) {
+    .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+@media (max-width: 500px) {
     .card {
         color: var(--gray);
-        height: 400px;
-        width: 450px;
+        height: 600px;
+        width: 80%; 
         overflow: hidden;
         text-align: center;
         display: blo;
         flex-direction: column;
         padding-bottom: 0;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px var(--blue1);
+    }
+    .card-info{
+        font-size: smaller;
+    }
+    .tag{
+        font-size: smaller;
+    }
+    .p{
+        font-size: x-small;
     }
     .grid-container {
         display: block;
         place-items: center;
         padding: 0px;
+        padding-left: -20px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
         column-gap: 1rem;
         row-gap: 3rem;
+        width: 100%;
     }
-    
+
     nav li {
         padding: 15px 20px;
     }

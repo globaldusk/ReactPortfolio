@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <h1 className="jack-title">Jack Shakespeare</h1>
-      <p className="ptm pbs">
+      <p className="bio ptm pbs">
         Broad experience in all aspects of software development, currently specialising in web development.<br/> 
         Checkout my projects!
       </p>
