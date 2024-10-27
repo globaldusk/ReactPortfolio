@@ -5,8 +5,18 @@ import communityImage from '../images/community-portal.png'
 import chatbotImage from '../images/django.png'
 import laundromaticImage from '../images/laundromatic.png'
 import liveSoonImage from '../images/live-soon.png';
+import yogaImage from '../images/yogaImage.png';
 
 export const projects = [
+    {
+      title: 'Object-Oriented yoga routine appllication',
+      description: "By building modular components and a JSON file database I have created a yoga app that I use each morning before I start my day.",
+        image: yogaImage,
+        tags: ['React', 'Vite', 'JSON', 'Node', 'JavaScript'],
+      source: 'https://github.com/globaldusk/Yoga-Site',
+      visit: 'https://yoga-site.pages.dev/',
+      id: 6,
+    },
     {
       title: 'E-Commerce Site for Matt Dylan Coaching',
       description: "Using React, Node.js, Sanity and Stripe, I have developed from scratch a fully function e-commercce website for Matt Dylan coaching. The content manager has access to their own Sanity CMS service, Stripe payment desk and blog integration",

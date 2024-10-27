@@ -14,9 +14,7 @@
     padding: 60px 40px;
     margin: 0 auto;
 }
-.body p{
-    padding: 100px;
-}
+
 form {
     display: flex;
     flex-direction: column;
