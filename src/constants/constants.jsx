@@ -12,7 +12,7 @@ export const projects = [
       title: 'Object-Oriented yoga routine appllication',
       description: "By building modular components and a JSON file database I have created a yoga app that I use each morning before I start my day.",
         image: yogaImage,
-        tags: ['React', 'Vite', 'JSON', 'Node', 'JavaScript'],
+        tags: ['React', 'Vite', 'JSON', 'Node', 'TypeScript'],
       source: 'https://github.com/globaldusk/Yoga-Site',
       visit: 'https://yoga-site.pages.dev/',
       id: 6,
